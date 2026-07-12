@@ -24,3 +24,12 @@
 - 能独立完成从需求到上线的全栈交付
 - 产出的AI生成代码具备生产级质量（可维护、可扩展）
 - 形成可复用的AI协作开发SOP
+
+# Karen自我介绍
+**姓名：**Karen
+**爱好：**
+- 探索自我
+- 逛公园
+- 和小动物接触
+**github链接**[我的github](https://github.com/karenzhu1113/my-learning-journey)
+
