@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30天AI开发学习计划</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #4f46e5;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+        .goal-section {
+            background: #fff;
+            padding: 24px;
+            margin-bottom: 32px;
+            border-left: 4px solid #4f46e5;
+        }
+        .goal-section h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e293b;
+        }
+        .goal-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .goal-section li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            color: #475569;
+        }
+        .goal-section li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4f46e5;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        thead {
+            background: #4f46e5;
+            color: #fff;
+        }
+        th {
+            padding: 14px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        tbody tr {
+            border-bottom: 1px solid #e2e8f0;
+            transition: background-color 0.2s;
+        }
+        tbody tr:hover {
+            background: #f1f5f9;
+        }
+        tbody td {
+            padding: 14px 12px;
+            font-size: 0.9rem;
+        }
+        .day-number {
+            font-weight: 600;
+            color: #4f46e5;
+            font-size: 1rem;
+        }
+        .status {
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .status-pending {
+            background: #f1f5f9;
+            color: #64748b;
+        }
+        .status-in-progress {
+            background: #fef3c7;
+            color: #d97706;
+        }
+        .status-completed {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+        .week-label {
+            background: #eef2ff;
+            font-weight: 600;
+            color: #4f46e5;
+        }
+        tfoot {
+            background: #f8fafc;
+            font-weight: 500;
+            color: #64748b;
+        }
+        tfoot td {
+            padding: 16px 12px;
+            text-align: center;
+        }
+        .progress-bar {
+            height: 8px;
+            background: #e2e8f0;
+            margin-top: 8px;
+            position: relative;
+        }
+        .progress-fill {
+            height: 100%;
+            background: #4f46e5;
+            width: 0%;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>30天AI开发学习计划</h1>
+            <p class="subtitle">从B端PM到AI辅助开发者的转型之路</p>
+        </header>
+
+        <div class="goal-section">
+            <h2>学习目标</h2>
+            <ul>
+                <li>熟练使用AI编程工具（Claude Code、Cursor、Trae）完成前端页面与基础后端接口开发</li>
+                <li>掌握Prompt Engineering核心技巧，与AI高效协作完成功能拆解、代码生成与调试</li>
+                <li>独立交付完整MVP产品，跑通"想法→原型→上线"全流程</li>
+                <li>建立技术判断力，评估技术方案可行性，识别AI生成代码的风险点</li>
+            </ul>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>天数</th>
+                    <th>日期</th>
+                    <th>主题</th>
+                    <th>状态</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="4" class="week-label">第1周：AI工具入门与编程基础</td></tr>
+                <tr><td class="day-number">1</td><td>7月12日</td><td>AI编程工具安装与配置（Claude Code、Cursor）</td><td><span class="status status-in-progress">进行中</span></td></tr>
+                <tr><td class="day-number">2</td><td>7月13日</td><td>HTML基础：结构、语义标签、表单</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">3</td><td>7月14日</td><td>CSS基础：选择器、布局、Flexbox</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">4</td><td>7月15日</td><td>JavaScript基础：变量、函数、DOM操作</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">5</td><td>7月16日</td><td>AI提示词工程入门：精准描述需求</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">6</td><td>7月17日</td><td>实战：用AI生成简单网页（个人主页）</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">7</td><td>7月18日</td><td>复盘与总结：整理学习笔记</td><td><span class="status status-pending">待开始</span></td></tr>
+
+                <tr><td colspan="4" class="week-label">第2周：前端框架与组件化开发</td></tr>
+                <tr><td class="day-number">8</td><td>7月19日</td><td>React基础：组件、Props、State</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">9</td><td>7月20日</td><td>Hooks入门：useState、useEffect</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">10</td><td>7月21日</td><td>Next.js基础：路由、页面结构</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">11</td><td>7月22日</td><td>Tailwind CSS样式开发</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">12</td><td>7月23日</td><td>AI辅助组件开发：复杂UI组件</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">13</td><td>7月24日</td><td>实战：用Next.js构建博客首页</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">14</td><td>7月25日</td><td>复盘与总结：整理学习笔记</td><td><span class="status status-pending">待开始</span></td></tr>
+
+                <tr><td colspan="4" class="week-label">第3周：后端开发与数据库</td></tr>
+                <tr><td class="day-number">15</td><td>7月26日</td><td>Node.js基础：模块、文件系统</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">16</td><td>7月27日</td><td>Express框架：路由、中间件</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">17</td><td>7月28日</td><td>数据库基础：SQL与PostgreSQL</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">18</td><td>7月29日</td><td>ORM工具：Prisma入门</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">19</td><td>7月30日</td><td>AI辅助API开发：RESTful接口设计</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">20</td><td>7月31日</td><td>实战：开发CRUD接口</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">21</td><td>8月1日</td><td>复盘与总结：整理学习笔记</td><td><span class="status status-pending">待开始</span></td></tr>
+
+                <tr><td colspan="4" class="week-label">第4周：全栈项目与部署</td></tr>
+                <tr><td class="day-number">22</td><td>8月2日</td><td>全栈项目规划：需求拆解与技术选型</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">23</td><td>8月3日</td><td>前端页面开发：用户界面与交互</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">24</td><td>8月4日</td><td>后端逻辑开发：数据处理与API集成</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">25</td><td>8月5日</td><td>AI辅助调试：代码优化与Bug修复</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">26</td><td>8月6日</td><td>项目测试：单元测试与集成测试</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">27</td><td>8月7日</td><td>部署上线：Vercel/Netlify部署</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">28</td><td>8月8日</td><td>复盘与总结：整理学习笔记</td><td><span class="status status-pending">待开始</span></td></tr>
+
+                <tr><td colspan="4" class="week-label">第5周：进阶与沉淀</td></tr>
+                <tr><td class="day-number">29</td><td>8月9日</td><td>AI Agent与自动化工作流探索</td><td><span class="status status-pending">待开始</span></td></tr>
+                <tr><td class="day-number">30</td><td>8月10日</td><td>总结与展望：沉淀方法论与下一步计划</td><td><span class="status status-pending">待开始</span></td></tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        进度：0/30 天完成
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
