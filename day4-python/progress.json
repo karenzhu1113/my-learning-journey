@@ -1,0 +1,14 @@
+{
+  "learner": {
+    "name": "Karen",
+    "role": "PM",
+    "start_date": "2026-07-13"
+  },
+  "daily_records": [
+    {"day": 1, "topic": "开发环境搭建", "completed": true, "skills": ["Homebrew", "Node.js", "Git"]},
+    {"day": 2, "topic": "Git版本控制", "completed": true, "skills": ["Git工作流", "分支操作", "Trae AI"]},
+    {"day": 3, "topic": "Markdown+Pages部署", "completed": true, "skills": ["Markdown", "GitHub Pages", "Workflow"]},
+    {"day": 4, "topic": "Python核心复习", "completed": false, "skills": []}
+  ],
+  "weaknesses": ["Shell vs 包管理器", "Markdown语法混淆"]
+}
